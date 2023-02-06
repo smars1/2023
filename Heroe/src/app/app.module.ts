@@ -11,6 +11,9 @@ import { Error404Component } from './componentes/error404/error404.component';
 import { HeroeTarjetaComponent } from './componentes/heroe-tarjeta/heroe-tarjeta.component';
 import { HeroesComponent } from './componentes/heroes/heroes.component';
 import { HeroeComponent } from './componentes/heroe/heroe.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { BuscadorComponent } from './componentes/buscador/buscador.component';
+import { AboutComponent } from './componentes/about/about.component';
 
 
 @NgModule({
@@ -21,6 +24,9 @@ import { HeroeComponent } from './componentes/heroe/heroe.component';
     HeroeTarjetaComponent,
     HeroesComponent,
     HeroeComponent,
+    NavbarComponent,
+    BuscadorComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

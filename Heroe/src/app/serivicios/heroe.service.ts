@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class HeroeService {
 
-    private Heroes : Heroe[]=[
+    private heroes : Heroe[]=[
     {
 
       nombre: "Aquaman",
@@ -59,20 +59,35 @@ export class HeroeService {
       casa: "Marvel"
     }
 
-    ]
+]
 
   constructor() {
     console.log("Mi servicio de heroes esta disponible");
   }
 
   public getHeroes() : Heroe[] {
-    return this.Heroes
+    return this.heroes
   }
 
   public getHeroe(idx : number):Heroe{
-    return this.Heroes[idx]
+    return this.heroes[idx]
   }
 
+  buscarHeroe(termino : string) : Heroe[] {
 
+    let heroeArr : Heroe[] = [];
+    termino = termino.toLocaleLowerCase();
+
+    for(let i=0 ;i < this.heroes.length ; i++){
+      let heroe = this.heroes[i];
+      let nombre = heroe.nombre.toLocaleLowerCase();
+      if(nombre.indexOf(termino) >= 0){
+        heroe.idx = i;
+        heroeArr.push(heroe);
+      }
+    }
+    return heroeArr;
+  }
 
 }
+
