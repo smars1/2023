@@ -9,6 +9,7 @@ export class Heroe {
   public aparicion : string = "";
   public casa : string = "";
   public isProfugo? : boolean = false;
+  
 
   constructor(){
 
