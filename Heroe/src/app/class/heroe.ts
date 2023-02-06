@@ -9,7 +9,13 @@ export class Heroe {
   public aparicion : string = "";
   public casa : string = "";
   public isProfugo? : boolean = false;
-  
+  //agregamos este
+  public nombrePoder1? : string = "";
+  public nombrePoder2? : string = "";
+  public nombrePoder3? : string = "";
+  public poder1? : string = "";
+  public poder2? : string = "";
+  public poder3? : string = "";
 
   constructor(){
 

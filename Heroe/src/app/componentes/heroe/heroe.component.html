@@ -2,9 +2,8 @@
 <!-- utilizamos pipe        " {{ <argumento> | <metodo> }} "  -->
 <h1 class="animated fadeIn">{{ heroe.nombre | uppercase }} <small>{{ heroe.aparicion | date:'y' }}</small></h1>
 <hr/>
-
-<div class="row animated facein fast">
-  <div class="col=md-4">
+<div class="container row animated facein fast ">
+  <div class="col-md-4">
     <img [src]="heroe.img" class="img-fluid" [alt]="heroe.nombre">
     <br><br/>
   </div>
@@ -13,8 +12,28 @@
     <p>
       {{ heroe.biografia }}
     </p>
+    <div class="text-center">
+      <h2>Poderes y habilidades</h2>
+      <!-- <p>The .table-hover class enables a hover state on table rows:</p> -->
+      <table class="table table-hover  ">
+        <thead>
+          <tr>
+            <th>{{ heroe.nombrePoder1 }}</th>
+            <th>{{ heroe.nombrePoder2 }}</th>
+            <th>{{ heroe.nombrePoder3 }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="img-logo" [src]="heroe.poder1" class="img-logo"  max-width = "150" height="150"></td>
+            <td><img class="img-logo" [src]="heroe.poder2" class="img-logo" width = "150" height="150"></td>
+            <td><img class="img-logo" [src]="heroe.poder3" class="img-logo" width = "150" height="150"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <div>
-      <img *ngIf="heroe.casa == 'Marvel' " class="img-logo" src="assets/img/marvel-logo.png" [alt] = "heroe.casa">
+      <img *ngIf="heroe.casa == 'Marvel' " class="img-logo " src="assets/img/marvel-logo.png" [alt] = "heroe.casa">
       <img *ngIf="heroe.casa == 'DC' " class="img-logo" src="assets/img/dc-logo.jpg" [alt] ="heroe.casa">
 
     </div>

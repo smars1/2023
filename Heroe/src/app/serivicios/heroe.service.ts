@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class HeroeService {
 
+
     private heroes : Heroe[]=[
     {
 
@@ -14,7 +15,13 @@ export class HeroeService {
       img: "assets/img/aquaman.png",
       aparicion: "1941-11-01",
       casa:"DC",
-      isProfugo : true
+      isProfugo : true,
+      nombrePoder1 : "Telepatia marina",
+      nombrePoder2 : "Respirar bajo el agua",
+      nombrePoder3 : "Agua Control",
+      poder1: "../../assets/img/Attack_heros/Aquaman/aquaman-telepatia.jpg",
+      poder2: "../../assets/img/Attack_heros/Aquaman/adaptacion_anfibia.jpg",
+      poder3: "../../assets/img/Attack_heros/Aquaman/aqua_control.jpg"
     },
     {
       nombre: "Batman",
@@ -22,7 +29,13 @@ export class HeroeService {
       img: "assets/img/batman.png",
       aparicion: "1939-05-01",
       casa:"DC",
-      isProfugo : true
+      isProfugo : true,
+      nombrePoder1 : "Experto en combate",
+      nombrePoder2 : "Inquebrantable",
+      nombrePoder3 : "Es Bat-Man",
+      poder1: "../../assets/img/Attack_heros/Batman/ExpertoEncombate.png.crdownload",
+      poder2: "../../assets/img/Attack_heros/Batman/inquebrantable.jpg",
+      poder3: "../../assets/img/Attack_heros/Batman/es_batman.jpg"
     },
     {
       nombre: "Daredevil",
@@ -30,7 +43,13 @@ export class HeroeService {
       img: "assets/img/daredevil.png",
       aparicion: "1964-01-01",
       casa: "Marvel",
-      isProfugo : true
+      isProfugo : true,
+      nombrePoder1 : "Ecololizacion",
+      nombrePoder2 : "Experto en combate",
+      nombrePoder3 : "Puede persibir el bien y el mal en las personas",
+      poder1: "../../assets/img/Attack_heros/Daredevil/Ecolocalizacion.jpg",
+      poder2: "../../assets/img/Attack_heros/Daredevil/Experto_marciales.jpg",
+      poder3: "../../assets/img/Attack_heros/Daredevil/percepcion_del_bien_y_mal.jpg"
     },
     {
       nombre: "Hulk",
@@ -38,7 +57,13 @@ export class HeroeService {
       img: "assets/img/hulk.png",
       aparicion: "1962-05-01",
       casa:"Marvel",
-      isProfugo : true
+      isProfugo : true,
+      nombrePoder1 : "Super fuerza y resistencia",
+      nombrePoder2 : "Obtiene fuerza de su furia. Siempre esta enojado",
+      nombrePoder3 : "Emite radiacion gama",
+      poder1: "../../assets/img/Attack_heros/Hulk/super_fuerza.jpg",
+      poder2: "../../assets/img/Attack_heros/Hulk/poder_furia.jpg",
+      poder3: "../../assets/img/Attack_heros/Hulk/Genera rayos gamma.jpg"
     },
     {
       nombre: "Linterna Verde",
@@ -46,6 +71,12 @@ export class HeroeService {
       img: "assets/img/linterna-verde.png",
       aparicion: "1940-06-01",
       casa: "DC",
+      nombrePoder1 : "Fuerza de volutad",
+      nombrePoder2 : "Materializa su imaginacion",
+      nombrePoder3 : "Puede volar si lo imagina",
+      poder1: "../../assets/img/Attack_heros/linterna_verde/voluntadf.jpg",
+      poder2: "../../assets/img/Attack_heros/linterna_verde/Materializa_imaginacionjpg.jpg",
+      poder3: "../../assets/img/Attack_heros/linterna_verde/volar.jpg"
     },
     {
       nombre: "Spider-Man",
@@ -53,7 +84,14 @@ export class HeroeService {
       img: "assets/img/spiderman.png",
       aparicion: "1962-08-01",
       casa: "Marvel",
-      isProfugo : true
+      isProfugo : true,
+      nombrePoder1 : "Sentido aracnido",
+      nombrePoder2 : "Trepa muros",
+      nombrePoder3 : "Lanza telerañas",
+      poder1: "../../assets/img/Attack_heros/Spiderman/Spider_sentido.png",
+      poder2: "../../assets/img/Attack_heros/Spiderman/trepa_muros.jpg",
+      poder3: "../../assets/img/Attack_heros/Spiderman/lanza_telaranas.jpg"
+
     },
     {
       nombre: "Wolverine",
@@ -61,9 +99,18 @@ export class HeroeService {
       img: "assets/img/wolverine.png",
       aparicion: "1974-11-01",
       casa: "Marvel",
+      nombrePoder1 : "Adamantium clawns",
+      nombrePoder2 : "Super regeneracion",
+      nombrePoder3 : "Furia y surper fuerza",
+      poder1: "../../assets/img/Attack_heros/Wolverine/Clawnwolf.jpg",
+      poder2: "../../assets/img/Attack_heros/Wolverine/Wolf_Healt.jpeg",
+      poder3: "../../assets/img/Attack_heros/Wolverine/wol_furia_force.jpg"
+
     }
 
 ]
+
+
 
   constructor() {
     console.log("Mi servicio de heroes esta disponible");
